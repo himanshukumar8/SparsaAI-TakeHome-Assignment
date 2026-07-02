@@ -1,0 +1,9 @@
+# Decision Log
+
+| # | What I asked the AI | What it gave back | Accepted / Rejected / Modified — and why |
+|---|---------------------|-------------------|------------------------------------------|
+| 1 | Analyze the repository and identify production-readiness issues across the FastAPI backend and React frontend. | A prioritized list of engineering issues and an implementation roadmap. | Modified. Used it as a starting point, removed out-of-scope suggestions, and organized the work into implementation phases. |
+| 2 | Improve the backend while preserving the existing public API contract. | Recommendations for stronger validation, safer asynchronous execution, UUID-based run IDs, structured logging, and backend hardening. | Accepted with modifications. Kept only changes that improved correctness, reliability, and maintainability while preserving the API contract. |
+| 3 | Improve the frontend for production reliability without changing application functionality. | Suggestions covering polling reliability, request cancellation, validation, accessibility, lifecycle management, and error handling. | Modified. Simplified several recommendations to keep the implementation aligned with the assignment scope while improving robustness. |
+| 4 | Perform an independent engineering review of the completed implementation. | Identified additional issues related to polling, lifecycle management, validation, accessibility, configuration, and repository cleanup. | Accepted after verification. Each reported issue was independently validated before applying fixes to avoid unnecessary changes. |
+| 5 | Perform a final production-readiness audit and repository cleanup. | Repository cleanup recommendations, verification steps, build/lint/runtime validation, and final submission review. | Accepted. Removed generated artifacts, verified the project built successfully, and confirmed the repository was submission-ready. |
